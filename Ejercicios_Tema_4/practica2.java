@@ -8,8 +8,7 @@ public class practica2 {
     public static void main(String[] args) throws Exception {
 
         // Declaración e iniciaclización de variables.
-        int nUmERoif = -14;
-        int nUmERoif2 = 5;
+        int numeroIf = -14;
 
         int numeroWhile = 0;
         int numeroDoWhile = 0;
@@ -19,17 +18,20 @@ public class practica2 {
         String estacion = "verano";
 
 
-        // Estructura de control if.
-        if(nUmERoif == 0 || nUmERoif <0){
+        // Estructura de control else if.
+        
+        if(numeroIf > 0){
 
-            System.out.println("El número es inferior: " + nUmERoif);
-        };
-
-
-        if(nUmERoif2 == 1 || nUmERoif2 > 0){
-
-            System.out.println("EL número es superior: " + nUmERoif2 + "\n");
+            System.out.println("\nEs un número entero: " + numeroIf);
         }
+        else if(numeroIf < 0){
+
+            System.out.println("\nEs un número negativo: " + numeroIf);
+        }
+        else if(numeroIf == 0){
+
+            System.out.println("\nNeutralida: " + numeroIf);
+        } 
 
 
         // Incremento hasta llegar a 3 en bucle while.
